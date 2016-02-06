@@ -10,7 +10,7 @@ date:   2016-02-02 12:12:12
 
 The goal of this project is creating a quadcopter that can hold its position automatically using PID-controllers. It can be controlled via an android app. This project was started as part of a voluntary university project and is still under active development. We are currently a team of two electrical engineers.
 
-##Circuit Board
+## Circuit Board
 
 The circuit board was designed from scratch with a minimalistic design that keeps the weight as low as possible. For the prototype we decided it was best to attach the rotors directly to the circuit board. For later versions we plan to print a rack around the board to be able to use motors with higher power.
 
@@ -20,10 +20,10 @@ To get the current orientation we use the integrated accelerometer/gyroscope MPU
 
 The quadcopter communicates with the anrdoid app using a bluetooth module that is connected via UART.
 
-##Firmware
+## Firmware
 
 The firmware for the quadcopter is written in C using the Code Composer Studio by Texas Instruments. It is designed to be completly modular to be able to test parts of the programm independently. The programm flow is interrupt driven and makes heavy use of structures.
 
-##Android App
+## Android App
 
 To controll the quadcopter you can connect to it via an android app. For this purpose we implemented a master/slave communication protocol. The app is written in Java with Android Studio.
